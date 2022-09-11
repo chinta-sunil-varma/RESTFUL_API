@@ -31,8 +31,8 @@ This returns the API key so store it somewhere.
 Above request fetches the 2 sem results of rollno 160120737114.
 
 <h2>POINTS TO BE UNDERSTAND</h2>
-1. The RESTful API stated above is pure JSON API.
+<h4>1. The RESTful API stated above is pure JSON API.</h4>
 
-2. every ERROR producing results has a error property along with the error so make sure you first check the error property in code to know the request status.
+<h4>2. every ERROR producing results has a error property along with the error so make sure you first check the error property in code to know the request status.</h4>
 
-3. The only NON-error property JSON response i.e the result of a person successfully fetched
+<h4>3. The only NON-error property JSON response i.e the result of a person successfully fetched</h4>
