@@ -2,7 +2,7 @@
 
 CBIT-SEM-RESULT
 
-<h2>BASE URL:</h2>https://cbit-sem-result.herokuapp.com
+<h2>BASE URL:</h2>https://lime-tame-ostrich.cyclic.app/
 
 <h2>DISCLAIMER:</h2>
 currently as of today this API can only fetch the marks details of IT-1,IT-2,IT-3 only(excluding LE's) of R-20 regulation(batch 2020). 
@@ -14,19 +14,19 @@ currently as of today this API can only fetch the marks details of IT-1,IT-2,IT-
 
 <button style="color=green">GET/ </button>register /your-name/ your-password
 
-<b>eg: https://cbit-sem-result.herokuapp.com/register/this_is_my_name/this_is_my_password</b>
+<b>eg: https://lime-tame-ostrich.cyclic.app/register/this_is_my_name/this_is_my_password</b>
 
 This returns the API key so store it somewhere.
 
 <h3> 2.CHECK YOUR API KEY IN CASE IT'S LOST</H3>
 
 <button style="color=green">GET/ </button>check /your-name/ your-password
-<b>eg: https://cbit-sem-result.herokuapp.com/check/this_is_my_name/this_is_my_password</b>
+<b>eg: https://lime-tame-ostrich.cyclic.app/check/this_is_my_name/this_is_my_password</b>
 
 <h3>3.USING API</h3>
 
 <button style="color=green">GET/ </button>result /sem-no / your-rollno / your-API-key
-<b>eg: https://cbit-sem-result.herokuapp.com/result/2/160120737114/$2b$10$FCvQjjeatLh0bldmR1uHlu0d$pb$URT6nfBnzz.aOQSFvOi9otDe6</b>
+<b>eg: https://lime-tame-ostrich.cyclic.app/result/2/160120737114/$2b$10$FCvQjjeatLh0bldmR1uHlu0d$pb$URT6nfBnzz.aOQSFvOi9otDe6</b>
 
 Above request fetches the 2 sem results of rollno 160120737114.
 
