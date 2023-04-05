@@ -136,8 +136,8 @@ routes.get("/result/:sem/:id/:key", checker, (req, res) => {
 });
 
 routes.use('*',(req, res) => {
-  // res.send({'error':"out of end points nothing here!"});
-  res.render('index.ejs')
+  res.send({'error':"out of end points nothing here! view api documentation for valid routes"});
+  // res.render('index.ejs')
 });
 
 module.exports = routes;
