@@ -136,7 +136,7 @@ routes.get("/result/:sem/:id/:key", checker, (req, res) => {
 });
 
 routes.use('*',(req, res) => {
-  res.send({'error':"out of end points nothing here! view api documentation for valid routes"});
+  res.send({'error':"out of end points nothing here! view api documentation for valid routes https://github.com/chinta-sunil-varma/RESTFUL_API"});
   // res.render('index.ejs')
 });
 
