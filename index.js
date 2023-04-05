@@ -5,6 +5,7 @@ const main_routes = require('./routes/main_routes');
 
 const app = express();
 
+app.set('views',path.join(__dirname,'views'))
 
 app.use('/',main_routes)
 const PORT=process.env.PORT || 2555

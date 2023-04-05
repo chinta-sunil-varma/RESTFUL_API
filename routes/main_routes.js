@@ -1,8 +1,9 @@
 const express = require("express");
 const bcrypt = require("bcrypt");
+require('dotenv').config()
 const database = require("../models/database");
 const { mod1, mod2, mod3, auth_mod, api_model } = database;
-const key = `//2345/\0`;
+
 const routes = express.Router();
 
 routes.get("/check/:user/:pass", async (req, res) => {
@@ -40,10 +41,11 @@ routes.get("/register/:name/:pass", (req, res) => {
       }
       bcrypt.hash(pass, 10).then(function (hash) {
         // Store hash in your password DB.
-        const api = pass + key;
+        const api = pass + process.env.KEY;
         bcrypt
           .hash(api, 10)
           .then((result) => {
+           result= result.replace('/','')
             auth_mod
               .insertMany({ user: name, pass: hash, api: result })
               .then((innerresult) => {
@@ -133,8 +135,9 @@ routes.get("/result/:sem/:id/:key", checker, (req, res) => {
   }
 });
 
-routes.use((req, res) => {
-  res.send({'error':"out of end points nothing here!"});
+routes.use('*',(req, res) => {
+  // res.send({'error':"out of end points nothing here!"});
+  res.render('index.ejs')
 });
 
 module.exports = routes;
